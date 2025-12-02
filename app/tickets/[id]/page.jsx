@@ -26,7 +26,7 @@ async function getTicket(id)
                             //you can use a template string as well:  (`http://localhost:4000/tickets/${id}`)
     const res = await fetch('http://localhost:4000/tickets/'+ id , { 
       next: {
-        revalidate: 60
+        revalidate: 0
       } 
     });
 
